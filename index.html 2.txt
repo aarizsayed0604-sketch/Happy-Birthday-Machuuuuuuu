@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Machu ❤️</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-black via-zinc-900 to-black text-white overflow-x-hidden">
+
+  <div id="lockScreen" class="min-h-screen flex items-center justify-center p-6">
+    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl shadow-2xl p-8 w-full max-w-md text-center">
+      <h1 class="text-4xl font-serif mb-3">Happy Birthday Machu 🎂</h1>
+      <p class="text-zinc-400 mb-6">
+        A tiny little place made just for us ❤️
+      </p>
+
+      <input
+        id="passwordInput"
+        type="password"
+        placeholder="Enter the password"
+        class="w-full p-3 rounded-2xl bg-zinc-800 border border-zinc-600 outline-none mb-4"
+      />
+
+      <button
+        onclick="unlockSite()"
+        class="w-full bg-white text-black py-3 rounded-2xl font-semibold hover:scale-105 transition"
+      >
+        Unlock ❤️
+      </button>
+
+      <p class="text-xs text-zinc-500 mt-4">
+        Hint: Use something meaningful to both of you.
+      </p>
+    </div>
+  </div>
+
+  <div id="mainContent" class="hidden">
+    <div class="max-w-4xl mx-auto px-6 py-16">
+      <div class="text-center mb-16">
+        <p class="uppercase tracking-[0.3em] text-zinc-400 text-sm mb-4">
+          For My Favorite Person
+        </p>
+
+        <h1 class="text-6xl md:text-7xl font-serif mb-6 leading-tight">
+          Happy Birthday
+          <br />
+          <span class="italic">Machu ❤️</span>
+        </h1>
+
+        <p class="text-zinc-300 text-lg max-w-2xl mx-auto leading-relaxed">
+          I know I can’t be there with you today, but I still wanted to
+          make sure I make your day betterrrrr ;)
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-16">
+        <div class="bg-zinc-900/70 border border-zinc-800 rounded-3xl p-6 backdrop-blur-sm">
+          <h2 class="text-2xl mb-4 font-serif">Things I Love About You ✨</h2>
+          <ul class="space-y-3 text-zinc-300 leading-relaxed">
+            <li>• The way you make even boring days feel special</li>
+            <li>• Your smile that fixes my mood instantly</li>
+            <li>• Our random late-night conversations</li>
+            <li>• The comfort I feel with you</li>
+            <li>• The way you care about people you love</li>
+            <li>• You are so kind</li>
+            <li>• Just looking at you makes me forget all the problems I have</li>
+          </ul>
+        </div>
+
+        <div class="bg-zinc-900/70 border border-zinc-800 rounded-3xl p-6 backdrop-blur-sm">
+          <h2 class="text-2xl mb-4 font-serif">A Little Birthday Note 💌</h2>
+          <p class="text-zinc-300 leading-relaxed">
+            I hope this year brings you happiness, peace, confidence, and
+            everything your heart has been quietly wishing for. Thank you for
+            being such an important part of my life. I genuinely don’t know
+            what I’d do without you.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-zinc-900/70 border border-zinc-800 rounded-[2rem] p-8 text-center mb-16">
+        <h2 class="text-3xl font-serif mb-6">For You ❤️</h2>
+
+        <div class="space-y-6 text-zinc-300 max-w-2xl mx-auto leading-relaxed text-lg mb-8">
+          <p>
+            If it wasn't for you, I would have never experienced what love actually means.
+          </p>
+
+          <p>
+            My favorite person and my favorite day — I seriously wish I could meet youuuu.
+          </p>
+
+          <p>
+            You are the best girlfriend, the bestest friend, and the most amazing being and I am very sure everyone is blessed to have Machu in their life.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-zinc-900/70 border border-zinc-800 rounded-[2rem] p-8 text-center mb-16">
+        <h2 class="text-3xl font-serif mb-4">Open When You Miss Me 🌙</h2>
+        <p class="text-zinc-300 max-w-2xl mx-auto leading-relaxed">
+          Distance sucks sometimes, but I hope you always remember that
+          there’s someone thinking about you way more than you realize.
+          No matter how busy life gets, you’ll always matter to me.
+        </p>
+      </div>
+
+      <div class="text-center space-y-4">
+        <p class="text-zinc-400 italic text-lg">
+          “And if you ever forget how loved you are, come back here.”
+        </p>
+
+        <p class="text-zinc-500 text-sm mt-8">
+          happy birthday my love ❤️
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const correctPassword = "machu2026";
+
+    function unlockSite() {
+      const enteredPassword = document.getElementById("passwordInput").value;
+
+      if (enteredPassword === correctPassword) {
+        document.getElementById("lockScreen").classList.add("hidden");
+        document.getElementById("mainContent").classList.remove("hidden");
+      } else {
+        alert("Wrong password 💔");
+      }
+    }
+  </script>
+
+</body>
+</html>
